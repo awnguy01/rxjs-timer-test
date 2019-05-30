@@ -1,0 +1,21 @@
+.timed-widget__container--outer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .timed-widget__container--inner {
+    width: 50vw;
+    border: 1rem solid #f44336;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    .timed-widget__clock {
+      font-family: 'Fjalla One', sans-serif;
+      font-weight: bold;
+      font-size: 5rem;
+      color: #f44336;
+    }
+  }
+}
