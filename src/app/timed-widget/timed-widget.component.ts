@@ -7,7 +7,7 @@ import { timer, Subscription } from 'rxjs';
   styleUrls: ['./timed-widget.component.scss']
 })
 export class TimedWidgetComponent implements OnInit {
-  // variable holding the dummy data
+  // variable holding the current date time
   clockData = new Date().toISOString();
 
   constructor() { }
@@ -29,6 +29,7 @@ export class TimedWidgetComponent implements OnInit {
   }
 
   // function being spied upon in the test
+  // updates the current date time every second
   updateClock() {
     this.clockData = new Date().toISOString();
   }
